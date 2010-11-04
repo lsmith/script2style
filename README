@@ -9,6 +9,16 @@ For example:
 </script>
 </head>
 
+becomes
+<head>
+....
+<style type="text/css">
+    .hide { display: none !important; }
+</style>
+</head>
+
+if JavaScript is enabled.
+
 Content inside of <script> tags is ignored when a src attribute is present, but
 it is stored in the element's innerHTML property.
 
