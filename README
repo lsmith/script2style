@@ -1,0 +1,25 @@
+A tiny little script that swaps itself with a <style> node containing whatever
+was inside the <script> tag.
+
+For example:
+<head>
+....
+<script src="script2style.js">
+    .hide { display: none !important; }
+</script>
+</head>
+
+Content inside of <script> tags is ignored when a src attribute is present, but
+it is stored in the element's innerHTML property.
+
+There are two versions of the script:
+1. script2style.js does a straight <script> => <style> conversion
+2. script2style+.js also extracts @imports from the content and generates <link> tags from them.
+
+File sizes are:
+script2style.js   253B (382B uncompressed)
+script2style+.js  497B (972B uncompressed)
+
+It looks a little dubious, or confusing even, to see <script...> containing CSS
+in your markup, but it works.  It may not be the best solution out there, just
+something I came up with one night. YMMV.

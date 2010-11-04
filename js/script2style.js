@@ -1,0 +1,1 @@
+(function(f){var a=f.getElementsByTagName("script"),e=a[a.length-1],c=e.innerHTML,b=f.createElement("style");b.type="text/css";if(b.styleSheet){b.styleSheet.cssText=c;}else{b.appendChild(f.createTextNode(c));}e.parentNode.replaceChild(b,e);})(document);
